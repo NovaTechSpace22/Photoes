@@ -11,3 +11,4 @@ branchName=$(git rev-parse --abbrev-ref HEAD)
 rawUrl=$(echo $repoUrl | sed -e 's/https:\/\/github.com/https:\/\/raw.githubusercontent.com/' -e "s/\.git$/\/$branchName\/$filePath/")
 
 echo $rawUrl
+
